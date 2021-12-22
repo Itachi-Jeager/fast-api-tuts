@@ -1,7 +1,7 @@
 from fastapi import FastAPI, BackgroundTasks
 from . import models
 from .database import engine
-from mainscript import runner
+# from mainscript import runner
 from .routers import characters, users, auth, votes
 import json
 from .config import settings
@@ -39,11 +39,11 @@ scraper_dict = {'kelinahospital': './HealthNewsScraper/scrapes/kh.jl',
                 }
 
 
-@app.get("/scraper")
-async def scraper(background_tasks: BackgroundTasks):  
-    runner(['kelinahospital'], state=1)
-    # background_tasks.add_task(runner, ['kelinahospital', 'HCIHealthcare'], state=0)
-    return{"message": "successful scrape"}
+# @app.get("/scraper")
+# async def scraper(background_tasks: BackgroundTasks):  
+#     runner(['kelinahospital'], state=1)
+#     # background_tasks.add_task(runner, ['kelinahospital', 'HCIHealthcare'], state=0)
+#     return{"message": "successful scrape"}
     
 
 
