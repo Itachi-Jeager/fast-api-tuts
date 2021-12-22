@@ -1,0 +1,6 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+**/HealthNewsScraper/HealthNewsScraper/__pycache__/
+**/HealthNewsScraper/HealthNewsScraper/spiders/__pycache__/
+**/.env
+**/venv/
