@@ -27,7 +27,7 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Sasageyo, Sasageyo"}
+    return {"message": "Shits about to get lit up in this joint"}
 
 
 app.include_router(users.router)
