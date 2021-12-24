@@ -27,7 +27,7 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Eren"}
+    return {"message": "Eren from GitHub Actions"}
 
 
 app.include_router(users.router)
